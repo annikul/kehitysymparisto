@@ -1,4 +1,4 @@
-# Yhdeksän henkeä (sivu 60) (testattu)
+# Peli missä käyttäjän pitää valita vaikeusaste ja arvata sana
 import random
 
 lives = 9
