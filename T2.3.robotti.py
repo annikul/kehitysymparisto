@@ -78,6 +78,22 @@ t.end_fill()
 t.goto(-85, 170)
 rectangle (80, 50, '#02f727', 'teksti')
 
+# Hiukset
+t.goto(-50, 200)
+rectangle (2, 30, '#1002d1', 'keskel_hiukset')
+
+t.goto(-53, 181)
+rectangle (2, 10, '#07fad1', 'vasen_hiukset')
+
+t.goto(-56, 190)
+rectangle (2, 10, '#07fad1', 'vasen_hiukset')
+
+t.goto(-43, 181)
+rectangle (2, 10, '#fa07cd', 'oikea_hiukset')
+
+t.goto(-40, 190)
+rectangle (2, 10, '#fa07cd', 'oikea_hiukset')
+
 # Silmät
 while True:
     # Tämä pitäisi tehdä funktiossa kuten tehtävä esimerkissä
@@ -90,7 +106,14 @@ while True:
     rectangle (5, 5, 'black','silmat')
 
     # Suu
-    t.goto(-65, 135)
-    rectangle (40, 5, '#f7021f', 'suu')
+   
+    t.goto(-70, 140)
+    rectangle (5, 10, '#f7021f', 'suu_vasen')
+    
+    t.goto(-70, 130)
+    rectangle (50, 5, '#f7021f', 'suu_keskel')
+
+    t.goto(-25, 140)
+    rectangle (5, 10, '#f7021f', 'suu_oikea')
 
     t.hideturtle()
