@@ -9,7 +9,7 @@ import random
 import string
 import unittest
 
-runtest=0
+runtest=0 # muuta 1 kun haluut testaa
 
 def generate_password():
     nouns = ['omena','dinosaurus','pallo','paahdin','vuohi','lohikäärme',
@@ -48,7 +48,7 @@ def generate_password():
 if (runtest==0):
     generate_password()
 
-class test_salasana(unittest.TestCase): #test_salasana on se minkä pitää olla sama kun terminaaliin laittaman
+class test_salasana(unittest.TestCase): 
     def test_generate_password_success(self):
         actual = len(generate_password())
         expected=[11,12,13,1,4,15,16,17,18,19,20]
@@ -56,3 +56,4 @@ class test_salasana(unittest.TestCase): #test_salasana on se minkä pitää olla
         self.assertIn(actual,expected)
 
 # Testaa muuta runtest = 1 ja terminaaliin= python3 -m unittest test_salasana.py
+# test_salasana.py pitää olla sama kuin tiedoston nimi eli tän jutun nimi
