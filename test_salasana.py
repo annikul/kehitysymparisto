@@ -48,7 +48,7 @@ def generate_password():
 if (runtest==0):
     generate_password()
 
-class test_salasana(unittest.TestCase): 
+class test_salasana(unittest.TestCase):                     # Testi kertoo uuden salasanan ja montako kirjainta salasanassasi on
     def test_generate_password_success(self):
         actual = len(generate_password())
         expected=[11,12,13,1,4,15,16,17,18,19,20]
