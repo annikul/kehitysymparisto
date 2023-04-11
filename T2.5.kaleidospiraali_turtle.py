@@ -7,17 +7,15 @@ import turtle
 from itertools import cycle
 
 # Vaihdetaan 'red' RGB Hex-muotoon ja lisätään loppuun megenta väri lisää
-colors = cycle(['#FF000', 'orange', 'yellow', 'green', 'blue', 'purple', 'FF00FF', '#00FF00', 'magenta'])
+colors = cycle(['#FF0000', 'orange', 'yellow', 'green', 'blue', 'purple', '#FF00FF', '#00FF00', 'magenta'])
 
 def draw_circle(size, angle, shift):
     turtle.pencolor (next(colors))
-    turtle.penup ()
-    turtle.circle (100)
-    turtle.right(20)
+    turtle.circle (size)
+    turtle.right (angle)
     turtle.forward(shift)
     draw_circle(size + 5, angle + 1, shift +1)
-    turtle.pendown
-
+  
 turtle.bgcolor ('black')
 turtle.speed ('fast')
 turtle.pensize (10)

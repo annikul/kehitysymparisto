@@ -10,7 +10,7 @@
 import random
 import unittest
 
-runtest=0 # muuta 1 kun haluut testaa
+runtest=1 # muuta 1 kun haluut testaa
 
 lives = 9
 
