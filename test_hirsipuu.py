@@ -87,8 +87,8 @@ while lives > 0:
             print('Voitit! Salainen sana oli ' + secret_word)
             break
 
-if (runtest==0):
-    generate_password()
+        if (runtest==0):
+            generate_password()
 
 class test_salasana(unittest.TestCase):                     
     def test_generate_password_success(self):

@@ -4,7 +4,9 @@
 # @change: ak
 
 import turtle
+import unittest
 from itertools import cycle
+runtest = 1
 
 # Vaihdetaan 'red' RGB Hex-muotoon ja lisätään loppuun megenta väri lisää
 colors = cycle(['#FF0000', 'orange', 'yellow', 'green', 'blue', 'purple', '#FF00FF', '#00FF00', 'magenta'])
@@ -22,3 +24,17 @@ turtle.pensize (10)
 draw_circle(30, 45, 10)
 
 turtle.hideturtle()
+
+def kaleidospiraali():
+    if (runtest == 1): 
+            output=[5, colors]   
+            return output
+
+if (runtest == 0):
+        kaleidospiraali()
+
+class test_kaleidospiraali(unittest.TestCase):
+    def test_kaleidospiraali_success(self):
+        actual=kaleidospiraali()
+
+# python -m unittest test_kaleidospiraali.py
