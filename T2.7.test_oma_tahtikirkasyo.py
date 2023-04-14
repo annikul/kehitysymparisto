@@ -56,4 +56,4 @@ class test_tahtikirkasyo(unittest.TestCase):
     def test_tahtikirkasyo_success(self):
         actual=tahtikirkasyo()
 
-# python -m unittest test_tahtikirkasyo.py
+# python -m unittest test_oma_tahtikirkasyo.py
