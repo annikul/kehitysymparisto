@@ -1,7 +1,14 @@
+# Tehtävä T2.1.oma_yhdeksan_henkea.py
+# Valitse vaikeustaso 1-3. Vaikeustasosta riippuen sinulla on 6-12 elämää ja sinun 
+# pitää selvittää mikä sana on kyseessä, voit arvata kirjaimia tai yrittää arvata koko sanan. 
+# Näet koko ajan oikein arvaamasi kirjaimet "ARVAA SANA" kohdassa 
+# ja väärin arvaamasi kirjaimet "ARVATUT KIRJAIMET" kohdassa
 # @author: ak
 # @since: 22.3.2023
 # @version: 1.0
 # @change: ak
+
+
 
 # Peli missä käyttäjän pitää valita vaikeusaste ja arvata sana
 import random

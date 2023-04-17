@@ -1,3 +1,5 @@
+# Tehtävä T2.3.oma_robotti.py
+# Piirtää suorakaiteista ja ympyrästä robotin, jolla on hiukset, hymyhuulilla ja silmät liikkuvat.
 # @author: ak
 # @since: 22.3.2023
 # @version: 1.0

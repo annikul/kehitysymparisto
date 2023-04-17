@@ -1,5 +1,5 @@
-# Tulostaa sinulle random salasanoja 
-
+# Tehtävä T1.9.3.Q2.salasana_valitsin.py
+# Tulostaa sinulle salasanan random sanoista, numeroista, erikoismerkeistä
 # @author: ak
 # @since: 22.3.2023
 # @version: 1.0
@@ -37,6 +37,7 @@ def generate_password():
         response = input("Haluatko toisen salasanan? Vastaa k tai e ")
 
         if response == 'e':
-
             break
+        else:
+            return password
 
