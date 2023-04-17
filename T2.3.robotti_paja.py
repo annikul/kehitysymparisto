@@ -1,7 +1,7 @@
 # Tehtävä T2.3.robotti_paja.py
 # Piirtää eri värisistä suorakaiteista robotin.
 # @author: ak
-# @since: 22.3.2023
+# @since: 17.4.2023
 # @version: 1.0
 # @change: ak
 
@@ -68,15 +68,26 @@ t.goto(-85, 170)
 rectangle (80, 50, 'red')
 
 # silmät
-t.goto(-60, 160)
-rectangle (30, 10, 'white')
-t.goto(-55, 155)
-rectangle (5, 5, 'black')
-t.goto(-40, 155)
-rectangle (5, 5, 'black')
+while True:
+    t.hideturtle()
+    t.goto(-60, 160)
+    rectangle (30, 10, 'white')
+    t.goto(-55, 155)
+    rectangle (5, 5, 'black')
+    t.goto(-40, 155)
+    rectangle (5, 5, 'black')
+    
+    # Vaihdetaan silmien paikkaa
+    t.goto(-60, 160)
+    rectangle (30, 10, 'white')
+    t.goto(-55, 154)
+    rectangle (5, 5, 'black')
+    t.goto(-40, 158)
+    rectangle (5, 5, 'black')
 
-# suu
-t.goto(-65, 135)
-rectangle (40, 5, 'black')
 
-t.hideturtle()
+    # suu
+    t.goto(-65, 135)
+    rectangle (40, 5, 'black')
+
+    t.hideturtle()

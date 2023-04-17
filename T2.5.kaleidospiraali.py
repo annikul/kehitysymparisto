@@ -1,3 +1,5 @@
+# Tehtävä T2.5.kaleidospiraali
+# Tekee ympyröitä peräkkäin ja aina seuraava on isompi kun edellinen.
 # @author: ak
 # @since: 22.3.2023
 # @version: 1.0
