@@ -28,8 +28,8 @@ def generate_password():
         number = random.randrange(0, 100)
 
         special_char= random.choice(string.punctuation)
-        # rakennetaan salasana
-
+       
+       # rakennetaan salasana
         password = adjective + noun + str(number) + special_char
 
         print(' Uusi salasanasi on: %s' % password)
@@ -41,3 +41,4 @@ def generate_password():
         else:
             return password
 
+generate_password()

@@ -28,7 +28,7 @@ def weatherstation(test_input):   # def weatherstation teki tästä funktion plu
         return output
 
 if runtest==1:  
-    weatherstation('')          # Voit kokeilla että toimiiko koodi kun laitat alas ja ylös runtest 1 ja tähän'' väliin lunta jne 
+     weatherstation('vetta')     # Voit kokeilla että toimiiko koodi kun laitat alas ja ylös runtest 1 ja tähän'' väliin parametrin esim. lunta jne 
                                 # Tässä kutsutaan funktiota eli weatherstation() on funktio. 
                                 # Jos haluat ajaa sen monta kertaa niin tee loop tai kopio tuo rivi alas.
 

@@ -31,7 +31,7 @@ def generate_password():
         # satunnainen numero väliltä 0...99
         number = random.randrange(0, 100)
 
-        special_char= random.choice(string.punctuation)
+        special_char = random.choice(string.punctuation)
         
         # rakennetaan salasana
         password = adjective + noun + str(number) + special_char
