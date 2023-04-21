@@ -56,4 +56,5 @@ class test_tahtikirkasyo(unittest.TestCase):
     def test_tahtikirkasyo_success(self):
         actual=tahtikirkasyo()
 
-# python -m unittest test_tahtikirkasyo.py
+# Testaa muuta runtest = 1 ja terminaaliin = python3 -m unittest test_tahtikirkasyo.py
+# test_tahtikirkasyo.py pitää olla sama kuin tiedoston nimi eli tän jutun nimi

@@ -38,5 +38,9 @@ if (runtest == 0):
 class test_kaleidospiraali(unittest.TestCase):
     def test_kaleidospiraali_success(self):
         actual=kaleidospiraali()
+        
 
-# python -m unittest test_kaleidospiraali.py
+
+
+# Testaa muuta runtest = 1 ja terminaaliin = python3 -m unittest test_kaleidospiraali.py
+# test_kaleidospiraali.py pitää olla sama kuin tiedoston nimi eli tän jutun nimi

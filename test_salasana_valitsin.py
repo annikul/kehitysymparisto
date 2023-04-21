@@ -38,12 +38,6 @@ def generate_password():
 
         print(' Uusi salasanasi on: %s' % password)
 
-        #response = input("Haluatko toisen salasanan? Vastaa k tai e ")
-
-        #if response == 'e':
-
-        #    break
-
         return password
     
 if (runtest==0):
@@ -56,5 +50,5 @@ class test_salasana(unittest.TestCase):
         print('actual= ',actual)
         self.assertIn(actual,expected)
 
-# Testaa muuta runtest = 1 ja terminaaliin= python3 -m unittest test_salasana_valitsin.py
+# Testaa muuta runtest = 1 ja terminaaliin = python3 -m unittest test_salasana_valitsin.py
 # test_salasana.py pitää olla sama kuin tiedoston nimi eli tän jutun nimi
