@@ -9,7 +9,7 @@ import turtle
 from itertools import cycle
 
 
-colors = cycle(['#7A000C', '#8F000E', '#FF0A23', '#7A000C', '#FF0A23', '#8F000E','#FF0A23' ])
+colors = cycle(['#7A000C', '#8F000E', '#FF0A23', '#7A000C', '#FF0A23', '#8F000E','#FF0A23'])
 
 def draw_circle(size, angle, shift):
     turtle.pencolor (next(colors))
