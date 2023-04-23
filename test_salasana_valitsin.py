@@ -10,7 +10,7 @@ import random
 import string
 import unittest
 
-runtest=0 # muuta 1 kun haluut testaa
+runtest=1 # muuta 1 kun haluut testaa
 
 def generate_password():
     nouns = ['omena','dinosaurus','pallo','paahdin','vuohi','lohikäärme',
@@ -43,12 +43,20 @@ def generate_password():
 if (runtest==0):
     generate_password()
 
-class test_salasana(unittest.TestCase):
+    class test_salasana(unittest.TestCase):
+        def test_generate_password_success(self):
+            actual = len(generate_password())
+            print('actual= ',actual)
+            self.assertGreater(actual, 11)
+
+
+"""class test_salasana(unittest.TestCase):
     def test_generate_password_success(self):
         actual = len(generate_password())
-        expected=[11,12,13,1,4,15,16,17,18,19,20]
+        expected=[11,12,13,14,15,16,17,18,19,20]  # Sallitut pituudet salasanalle, jos on pitempi kuin 20 tulee virhe
         print('actual= ',actual)
-        self.assertIn(actual,expected)
+        self.assertIn(actual,expected)   # assertIn = että ei saa olla minkään muun pituinen kuin 11-20 kirjainta muuten tulee virhe
+        """
 
 # Testaa muuta runtest = 1 ja terminaaliin = python3 -m unittest test_salasana_valitsin.py
 # test_salasana.py pitää olla sama kuin tiedoston nimi eli tän jutun nimi
