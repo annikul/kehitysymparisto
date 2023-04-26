@@ -1,4 +1,3 @@
-
 # Ohjelma tulostaa 1-10 luvut ja kertoo mikä niistä on pariton ja mikä parillinen. 
 # Testi tarkistaa mikä luku on pariton ja parillinen
 # @author: ak
@@ -8,8 +7,9 @@
 
 # Yksikkötestausvaiheet:
 # 1. luo kansio koodille tai lataa github:sta opettajan repositori ja avaa kansio seka luo python file kansioon
+# (kansion polussa ei saa olla skandeja joten ala kayta onedrivea koska kulun nimessa on skandeja)
 # 2. lisaa koodiin header alkuun mallin mukaan ja lisaa pvm seka omat nimikirjaimet
-# 3.. poista koodista aakkoset
+# 3.. poista koodista kaikki skandit
 # 4. muokataan koodi funktiomuotoon (nimea funktio)
 # 5. importoidaan yksikkötestikirjasto
 # 6. lisätään runtest- muuttuja.
