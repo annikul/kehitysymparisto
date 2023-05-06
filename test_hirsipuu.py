@@ -87,15 +87,11 @@ while lives > 0:
             print('Voitit! Salainen sana oli ' + secret_word)
             break
 
-        if (runtest==0):
-            generate_password()
+if (runtest==0):
+   update_clue()
 
-class test_salasana(unittest.TestCase):                     
-    def test_generate_password_success(self):
-        actual = len(generate_password())
-        expected=[11,12,13,1,4,15,16,17,18,19,20]
-        print('actual= ',actual)
-        self.assertIn(actual,expected)
-
-# Testaa muuta runtest = 1 ja terminaaliin= python3 -m unittest test_hirsipuu.py
-# test_hirsipuu.py pitää olla sama kuin tiedoston nimi eli tän jutun nimi
+class test_hirsipuu(unittest.TestCase):
+    def test_update_clue_success(self):
+        actual = len(update_clue())
+        print('actual= ', clue)
+        self.assertGreater(clue, 5)

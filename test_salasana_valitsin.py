@@ -1,6 +1,7 @@
 # Tehtävä test_salasana_valitsin.py
 # Testi tulostaa sinulle salasanan random sanoista, numeroista, erikoismerkeistä
-# ja kertoo montako merkkiä siinä on.
+# ja kertoo montako merkkiä siinä on. 
+# Testi menee läpi jos salasanassa on 11 tai enempi merkkiä.
 # @author: ak
 # @since: 22.3.2023
 # @version: 1.0
@@ -43,13 +44,13 @@ def generate_password():
 if (runtest==0):
     generate_password()
 
-    class test_salasana(unittest.TestCase):
-        def test_generate_password_success(self):
-            actual = len(generate_password())
-            print('actual= ',actual)
-            self.assertGreater(actual, 11)
+class test_salasana(unittest.TestCase):
+    def test_generate_password_success(self):
+        actual = len(generate_password())
+        print('actual= ',actual)
+        self.assertGreater(actual, 11)  # Jotta testi menee läpi salasanan pituus on 11 merkkiä tai enemmän.
 
-
+# Voisi testa myös näin mutta silloin pitää laittaa expected kohtaan kaikki numerot.
 """class test_salasana(unittest.TestCase):
     def test_generate_password_success(self):
         actual = len(generate_password())

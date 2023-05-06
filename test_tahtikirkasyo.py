@@ -1,7 +1,7 @@
 # test_tahtikirkasyo.py
 # Testi testaa että piirtonopeus on enemmän kuin 6. Nopeus 1-6 antaa virheen ja 7-> testi menee läpi.
 # @author: ak
-# @since: 22.3.2023
+# @since: 22.4.2023
 # @version: 1.0
 # @change: ak
 
@@ -15,7 +15,7 @@ runtest = 1
 
 x = 0
 y = 0
-speed = 7 # piirtonopeus. Tähän laittamalla 1-6 tulee virhekoodi
+speed = 7 # piirtonopeus. Tähän laittamalla 1-6 tulee virhekoodi. 7 tai isompi testi menee läpi
 
 
 def draw_star(points, size, col, x, y, speed): # lisätty speed
@@ -63,7 +63,7 @@ class test_tahtikirkasyo(unittest.TestCase):
         self.assertGreater(speed, 6)  # assertGreater tekee sen että speed pitää olla enempi kuin 6. 0-6 antaa virhekoodin
 
 # Testaa muuta runtest = 1 ja terminaaliin = python3 -m unittest test_tahtikirkasyo.py
-# test_tahtikirkasyo.py pitää olla sama kuin tiedoston nimi eli tän jutun nimi
+# test_tahtikirkasyo.py pitää olla sama kuin tiedoston nimi
 
 """Voisi tehdä myös näin, mutta sitten lukuja joutuisi kirjoittamaan loputtomiin asti
 class test_tahtikirkasyo(unittest.TestCase):

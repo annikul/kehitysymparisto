@@ -10,7 +10,7 @@ import unittest
 from itertools import cycle
 runtest = 1
 
-speed = 6
+pensize = 3
 
 # Vaihdetaan 'red' RGB Hex-muotoon ja lisätään loppuun megenta väri lisää
 colors = cycle(['#7A000C', '#8F000E', '#FF0A23', '#7A000C', '#FF0A23', '#8F000E','#FF0A23'])
@@ -29,11 +29,11 @@ draw_circle(30, 45, 10)
 
 turtle.hideturtle()
 
-def kaleidospiraali(speed):
-    speed('speed')
+def kaleidospiraali(pensize):
+    pensize('pensize')
 
     if (runtest == 1):    
-        return speed
+        return pensize
 
 if (runtest == 0):
         draw_circle()
@@ -41,10 +41,10 @@ if (runtest == 0):
 class test_kaleidospiraali(unittest.TestCase):
     def test_kaleidospiraali_success(self):
         #bgcolor = kaleidospiraali()
-        speed = kaleidospiraali()
+        pensize = kaleidospiraali()
         #pensize = kaleidospiraali()
-        print('actual= ', speed)
-        self.assertGreater(speed, 6)
+        print('actual= ', pensize)
+        self.assertGreater(pensize, 1)
  
 # Testaa muuta runtest = 1 ja terminaaliin = python3 -m unittest test_kaleidospiraali.py
 # test_kaleidospiraali.py pitää olla sama kuin tiedoston nimi eli tän jutun nimi
