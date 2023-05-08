@@ -97,7 +97,7 @@ def move_left(event):
 
 def move_right(event):
     (x1, y1, x2, y2) = c.coords(catcher)
-    if  x2 < canvas_width:
+    if x2 < canvas_width:
         c.move(catcher, 20, 0)
 
 c.bind('<Left>', move_left)
