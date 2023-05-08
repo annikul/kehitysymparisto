@@ -32,13 +32,7 @@ def weatherstation(test_input):   # def weatherstation teki tästä funktion plu
 if runtest==1:
 
     # weatherstation ('vetta')   
-    actual = weatherstation('vetta')
-    print(actual)
-    expected = 'Muista sateenvarjo!'
-    try:
-        assert actual == expected
-    except:
-        print('vetta = virhe')
+    
 
     # weatherstation ('lunta')
     actual = weatherstation('lunta')

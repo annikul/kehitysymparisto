@@ -1,3 +1,11 @@
+# Tehtävä test_weatherstation_2.py
+# Jos ei ole virheitä tulostaa: Muista sateenvarjo!
+# Jos kirjoitat virheen riville 44 tulee virhe teksti.
+# @author: ak
+# @since: 17.4.2023
+# @version: 1.0
+# @change: ak
+
 # HUOM! testissä ei saa olla ääkkosia!!!
 
 # Anna syottoarvona 1:ssa testauksessa = vetta
