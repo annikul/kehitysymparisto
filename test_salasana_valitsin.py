@@ -11,7 +11,7 @@ import random
 import string
 import unittest
 
-runtest=1 # muuta 1 kun haluut testaa
+runtest = 1 # muuta 1 kun haluut testaa
 
 def generate_password():
     nouns = ['omena','dinosaurus','pallo','paahdin','vuohi','lohikäärme',
@@ -41,7 +41,7 @@ def generate_password():
 
         return password
     
-if (runtest==0):
+if (runtest == 0):
     generate_password()
 
 class test_salasana(unittest.TestCase):
@@ -60,4 +60,3 @@ class test_salasana(unittest.TestCase):
         """
 
 # Testaa muuta runtest = 1 ja terminaaliin = python3 -m unittest test_salasana_valitsin.py
-# test_salasana.py pitää olla sama kuin tiedoston nimi eli tän jutun nimi

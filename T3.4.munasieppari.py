@@ -40,6 +40,7 @@ game_font.config(size = 18)
 
 score = 0
 score_text = c.create_text(10, 10, anchor = 'nw', font = game_font, fill = 'darkblue', text = 'Pisteet: ' + str(score))
+
 lives_remaining = 3
 lives_text = c.create_text(canvas_width -10, 10, anchor = 'ne', font = game_font, fill = 'darkblue', \
                            text = 'Henget: ' + str (lives_remaining))

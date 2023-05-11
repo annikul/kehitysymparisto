@@ -1,7 +1,7 @@
 # Ohjelma tulostaa 1-10 luvut ja kertoo mikä niistä on pariton ja mikä parillinen. 
 # Testi tarkistaa mikä luku on pariton ja parillinen
 # @author: ak
-# @since: 18.4.2023
+# @since: 8.5.2023
 # @version: 1.0
 # @change: ak
 
